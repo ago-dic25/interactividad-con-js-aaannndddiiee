@@ -1,0 +1,232 @@
+body{
+    font-size: 12px;
+    font-family: "Quicksand", sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+h3{
+    display: inline;
+    font-size: 23px;
+}
+h1{
+    display: inline;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;
+}
+a{
+    color: black;
+}
+.sin-subrayado{
+    text-decoration: none;
+}
+ul li{
+    font-size: 12px;
+    margin: 20px;
+    display: inline;
+    padding: 10 px;
+}
+button{
+    cursor: pointer;
+    background-color: white;
+    border: 0px;
+}
+.menu{
+    font-size: 12px;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    height:28px;
+}
+.botones-derecha{
+    display: flex;
+    margin-left: auto;
+    gap: 8px;
+}
+.imagen-principal{
+    position: relative;
+    display: inline-block;
+}
+.fecha{
+    position: absolute;
+    top: 35%;
+    left:30px;
+    margin: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-style: oblique;
+    background-color: white;
+}
+.boton-travel{
+    position: absolute;
+    top: 40%;
+    left:30px;
+    margin: 10px;
+    padding: 8px 8px;
+}
+.boton-travel2{
+    position: absolute;
+    top: 35%;
+    left:35%;
+    margin: 10px;
+    padding: 8px 8px;
+}
+.transparente{
+    background-color:transparent;
+    border: 1px solid;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border-width: 1px;
+    font-size: 11px;
+}
+.blanco{
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border-width: 1px;
+    font-size: 11px;
+}
+.texto-grande{
+    position: absolute;
+    max-width: 300px;
+    top: 40%;
+    left: 35%;
+}
+h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    margin-top: 12px;
+    margin-left: 7px;
+    background: white;
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.flecha{
+    position: absolute;
+    top: 100%;
+    left: 55%;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+h4{
+    font-size: 20px;
+    position: absolute;
+    font-weight: bold;
+    top: 40%;
+    left:10%;
+    right: 10%;
+}
+h5{
+    font-size: 16px;
+    position: absolute;
+    top: 20%;
+    left:10%;
+    right: 10%;
+}
+.cuadro-lateral-color{
+    position: absolute;
+    background-color:lightskyblue;
+    top: 20%;
+    left: 70%;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+.aprender{
+    display: flex;
+    position: absolute;
+    float: right;
+    top:80%;
+    left: 60%;
+    font-weight: bold;
+}
+.mas{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background-color: white;
+    border-radius: 22px;
+    border-width: 10px;
+    padding: 6px 10px;
+    font-size: 22px;
+}
+span{
+    position: absolute;
+    top: 10%;
+    left:10%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 5px;
+    font-size: 14px;
+}
+.cuadro-lateral-imagen{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+}
+.numero{
+    background-color:transparent;
+    color: white;
+    border: 1px solid white;
+    position: absolute;
+    top: 10%;
+    right: 12%;
+    border-radius: 30px;
+    padding: 15px 15px;
+    font-size: 12px;
+    font-weight: lighter;
+    font-style: italic;
+}
+.ver-mas{
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid white;
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    border-radius: 30px;
+    padding: 18px 18px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.post{
+     font-weight: bold;
+     width: 500px;
+     padding: 20px;
+     border: solid 1px lightblue;
+     margin: 10px 0;
+     box-shadow: 5px 5px 5px grey;
+     border-radius: 20px;
+}
+
+.mostrar{
+    display: block;
+}
+
+.ocultar{
+    display: none;
+}
