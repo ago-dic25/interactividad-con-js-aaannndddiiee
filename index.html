@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <title>BlogSpot</title>
+    </head>
+        <link href = "estilos.css" rel = "stylesheet">
+    <body>
+        <header>
+            <h3>BlogSpot.</h3>
+            <nav>
+                <ul style = "list-style: none;">
+                    <li><a href = "#" class = "sin-subrayado">Articles</a></li>
+                    <li><a href = "#" class = "sin-subrayado">Radio</a></li>                    
+                    <li><a href = "#" class = "sin-subrayado">Podcast</a></li>
+                    <li><a href = "#" class = "sin-subrayado">Be a writter</a></li>
+                    <li><a href = "#">Talk to us</a></li>
+                </ul>
+            </nav>
+            <section class = "botones-derecha">
+                <button type = "button"><img src = "busqueda.png" height="22px"></button>
+                <div><button type="button" class="menu">Menu</button></div>
+                <button type = "button" id = "dia-noche"><img src = "day-and-night-png-big-image-png-2400.png" height = "32px"></button>
+            </section>
+        </header>
+        <section>
+            <div>
+                <h1>Best of the week</h1>
+                <a href="#" class = "sin-subrayado" id = "verTodo">See all our post.➝</a>
+                <div class="posts ocultar" id="posts">
+                    <div class="post">Fotografia</div>
+                    <div class="post">Redes Sociales</div>
+                    <div class="post">Hacer manualidades</div>
+                </div>
+            </div>
+            <div class = "imagenes-principal">
+                <img src="pato.jpg" height = 500   style="border-radius: 20px;"/>
+                <div class = "fecha">sep 06, 2020</div>
+                <div class = "boton-travel"><button type = "button" class = "transparente">•Travel</button></div>
+                <div class = "boton-travel2"><button type = "button" class = "blanco">•Travel</button></div>
+                <div class = "texto-grande"><h2>Get to your dream destination now with TravelPro</h2></div>
+                <a href = "#" class = "flecha">🡭</a>
+            </div>
+        </section>
+        <aside>
+            <div class = "cuadro-lateral-color">
+                <span>•ADS</span>
+                <button type = "button" class = "mas" id = "masB">+</button>
+                <h4>Real talk in a corporate world</h4>
+                <h5>Become A BRODCAST MEMBER</h5>
+                <a href = "#" class = "aprender">Learn more</a>
+            </div>
+            <div class = "cuadro-lateral-imagen">
+                <img src = "pato2.jpg" width="250" style="border-radius: 20px;"/>
+                <button type = "button" class = "numero">24</button>
+                <a href = "#" class = "ver-mas" id = "verFotos">See all picks➝</a>
+                <div class = "imagenes ocultar" id = "fotos">
+                    <div ><img src = "pato3.jpg" class = "imagen" height="250" style="border-radius: 20px;"></div>
+                    <div class = "imagen" ><img src = "pato4.jpg" class = "imagen" height="250" style="border-radius: 20px;"></div>
+                    <div class = "imagen" ><img src = "pato5.jpg" class = "imagen" height="250" style="border-radius: 20px;"></div>
+                </div>
+            </div>
+        </aside>
+        <script src="index.js"></script>
+    </body>
+</html>

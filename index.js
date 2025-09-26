@@ -1,41 +1,34 @@
-//====Variables=====//
-var arreglo = [1, 2, 3, 4, 5];
-var entero = 1;
-var cadena_texto = "Hola Mundo";
-var booleano = true;
+var mas = document.getElementById("masB");
+var verTodos = document.getElementById("verTodo");
+var verFotos= document.getElementById("verFotos");
+var posts = document.getElementById("posts");
+var fotos = document.getElementById("fotos");
+var modo = document.getElementById("dia-noche");
 
-//===Constantes====//
-const PI = 3.1416;
-
-
-//====Funciones====//
-function suma(x, y){
-    var resultado = x + y;
-    console.log("El resultado de la suma es: " + resultado);
-    return resultado;
-}
-
-function imprimirMensaje(mensaje){
-    console.log("Este es mi mensaje " + mensaje);
-}
-
-imprimirMensaje("Hola");
-imprimirMensaje("Vacaciones 1 semana :D");
-imprimirMensaje(true);
-
-suma(1, 2);
-suma(10, 20);
-suma(100, 200);
-
-
-//===Elementos de la pagina como variables===///
-var botonBuscar = document.getElementById("buscar");
-
-console.log(botonBuscar);
-
-//==== Eventos===== //
-botonBuscar.addEventListener("click", function(){
-    //alert("Hiciste clic al boton");
-    botonBuscar.classList.add("rojo");
+mas.addEventListener("click", function(){
+    alert("Seccion en proceso...");
 });
 
+verTodos.addEventListener("click", function(){
+    if(posts.classList.contains("ocultar")){
+        posts.classList.remove("ocultar");
+        posts.classList.add("mostrar");
+    }else{
+        posts.classList.remove("mostrar");
+        posts.classList.add("ocultar");
+    }
+});
+
+verFotos.addEventListener("click", function(){
+    if(fotos.classList.contains("ocultar")){
+        fotos.classList.remove("ocultar");
+        fotos.classList.add("mostrar");
+    }else{
+        fotos.classList.remove("mostrar");
+        fotos.classList.add("ocultar");
+    }
+});
+
+modo.addEventListener("click", function(){
+    document.body.classList.toggle("dark-mode");
+});
