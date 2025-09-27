@@ -10,6 +10,12 @@ var cajabuscar = document.getElementById("busqueda");
 const inputBus = document.getElementById("palabra");
 const postsB = document.querySelectorAll(".post");
 
+var cuadroImg = document.querySelector(".cuadro-lateral-imagen");
+var imgPrin = cuadroImg.querySelector("img");
+var imgs = ["pato2.jpg","pato3.jpg", "pato4.jpg", "pato5.jpg"];
+var contImg = 0;
+var intervalo;
+
 var contador = 0;
 
 mas.addEventListener("click", function(){
@@ -68,4 +74,17 @@ inputBus.addEventListener("input", function(){
             post.style.display = "none";
         }
     }
+});
+
+cuadroImg.addEventListener("mouseenter", function(){
+    intervalo = setInterval(function(){
+        contImg = (contImg + 1) % imgs.length; 
+            imgPrin.src = imgs[contImg];
+        }, 2000);
+});
+
+cuadroImg.addEventListener("mouseleave", function() {
+        clearInterval(intervalo);
+        contImg = 0;
+        imgPrin.src = imgs[contImg];
 });
