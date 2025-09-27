@@ -2,11 +2,6 @@ body{
     font-size: 12px;
     font-family: "Quicksand", sans-serif;
 }
-
-body.dark-mode{
-    background-color: black;
-    color:white;
-}
 header{
     display: flex;
     align-items: center;
@@ -23,11 +18,9 @@ h1{
     font-style: italic;
     font-weight: bold;
 }
-
 a{
-    color: inherit;
+    color: black;
 }
-
 .sin-subrayado{
     text-decoration: none;
 }
@@ -71,7 +64,6 @@ button{
     font-weight: bold;
     font-style: oblique;
     background-color: white;
-    color: black;
 }
 .boton-travel{
     position: absolute;
@@ -138,7 +130,6 @@ h2{
     border: 1px solid white;
     border-radius: 30px;
     padding: 10px 15px;
-    color: black;
 }
 h4{
     font-size: 20px;
@@ -163,7 +154,6 @@ h5{
     width: 250px;
     height: 250px;
     border-radius: 10px;
-    color: black;
 }
 .aprender{
     display: flex;
@@ -221,7 +211,6 @@ span{
     padding: 18px 18px;
     font-size: 18px;
     font-weight: bold;
-    color: black;
 }
 
 .post{
