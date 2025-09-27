@@ -4,9 +4,17 @@ var verFotos= document.getElementById("verFotos");
 var posts = document.getElementById("posts");
 var fotos = document.getElementById("fotos");
 var modo = document.getElementById("dia-noche");
+var buscar = document.getElementById("buscar");
+var cajabuscar = document.getElementById("busqueda");
+
+const inputBus = document.getElementById("palabra");
+const postsB = document.querySelectorAll(".post");
+
+var contador = 0;
 
 mas.addEventListener("click", function(){
-    alert("Seccion en proceso...");
+    contador += 1;
+    alert("Likes: " + contador);
 });
 
 verTodos.addEventListener("click", function(){
@@ -31,4 +39,33 @@ verFotos.addEventListener("click", function(){
 
 modo.addEventListener("click", function(){
     document.body.classList.toggle("dark-mode");
+});
+
+buscar.addEventListener("click", function(){
+    if(posts.classList.contains("ocultar")){
+        posts.classList.remove("ocultar");
+        posts.classList.add("mostrar");
+    }else{
+        posts.classList.remove("mostrar");
+        posts.classList.add("ocultar");
+    }
+    if(cajabuscar.classList.contains("ocultar")){
+        cajabuscar.classList.remove("ocultar");
+        cajabuscar.classList.add("mostrar")
+    }else{
+        cajabuscar.classList.remove("mostar");
+        cajabuscar.classList.add("ocultar")
+    }
+});
+
+inputBus.addEventListener("input", function(){
+    let busqueda = inputBus.value.toUpperCase();
+    for(let post of postsB){
+        let texto = post.textContent.toUpperCase();
+        if(texto.includes(busqueda)){
+            post.style.display = "block";
+        }else{
+            post.style.display = "none";
+        }
+    }
 });

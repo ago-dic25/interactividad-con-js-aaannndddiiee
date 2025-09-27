@@ -21,7 +21,13 @@
                 </ul>
             </nav>
             <section class = "botones-derecha">
-                <button type = "button"><img src = "busqueda.png" height="22px"></button>
+                <div class="cajabuscar ocultar" id = "busqueda"><form method="get" id="buscarform">
+                <fieldset>
+                    <input type="text" id="palabra" value="" placeholder="Escribe tu búsqueda"  />
+                    <i class="search"></i>
+                </fieldset>
+                </form></div>
+                <button type = "button" id = "buscar"><img src = "busqueda.png" height="22px"></button>
                 <div><button type="button" class="menu">Menu</button></div>
                 <button type = "button" id = "dia-noche"><img src = "day-and-night-png-big-image-png-2400.png" height = "32px"></button>
             </section>
